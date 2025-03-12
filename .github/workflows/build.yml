@@ -166,7 +166,7 @@ jobs:
           echo 'GOARCH=arm64' >> $GITHUB_ENV
           echo 'CGO_ENABLED=1' >> $GITHUB_ENV
           echo 'CGO_LDFLAGS=-fuse-ld=lld -s -w' >> $GITHUB_ENV
-          git config --global --add safe.directory /__w/rclone/rclone
+          git config --global --add safe.directory /__w/rclone-prime/rclone-prime
 
       - name: arm64-v8a build
         run: go-termux build -v -tags android -trimpath -ldflags "github.com/rclone/rclone/fs.Version=${{ github.ref_name }}" -o build/rclone-armv8a .
