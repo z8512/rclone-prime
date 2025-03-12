@@ -174,8 +174,6 @@ jobs:
       - name: Package into Zip
         run: |
           cd build
-          mv rclone-armv7a rclone
-          zip -r rclone-${{ github.ref_name }}-android-arm.zip rclone
           mv rclone-armv8a rclone
           zip -r rclone-${{ github.ref_name }}-android-arm64.zip rclone
           
