@@ -1,4 +1,4 @@
-module github.com/rclone/rclone
+replace github.com/rclone/rclone => github.com/z8512/rclone-prime v1.69.1-1
 
 go 1.23.0
 
@@ -32,7 +32,7 @@ require (
 	github.com/coreos/go-systemd/v22 v22.5.0
 	github.com/dop251/scsu v0.0.0-20220106150536-84ac88021d00
 	github.com/dropbox/dropbox-sdk-go-unofficial/v6 v6.0.5
-	github.com/fsnotify/fsnotify v1.7.0
+	github.com/dustin/go-humanize v1.0.1
 	github.com/gabriel-vasile/mimetype v1.4.8
 	github.com/gdamore/tcell/v2 v2.8.1
 	github.com/go-chi/chi/v5 v5.2.1
@@ -63,6 +63,7 @@ require (
 	github.com/putdotio/go-putio/putio v0.0.0-20200123120452-16d982cac2b8
 	github.com/quasilyte/go-ruleguard/dsl v0.3.22
 	github.com/rclone/gofakes3 v0.0.4
+	github.com/rclone/rclone v0.0.0-00010101000000-000000000000
 	github.com/rfjakob/eme v1.1.2
 	github.com/rivo/uniseg v0.4.7
 	github.com/rogpeppe/go-internal v1.14.1
@@ -112,8 +113,9 @@ require (
 	github.com/akavel/rsrc v0.10.2 // indirect
 	github.com/alecthomas/atomic v0.1.0-alpha2 // indirect
 	github.com/anacrolix/chansync v0.4.1-0.20240627045151-1aa1ac392fe8 // indirect
-	github.com/anacrolix/fuse v0.2.0 // indirect
-	github.com/anacrolix/generics v0.0.1 // indirect
+	github.com/anacrolix/dht/v2 v2.19.2-0.20221121215055-066ad8494444 // indirect
+	github.com/anacrolix/envpprof v1.3.0 // indirect
+	github.com/anacrolix/generics v0.0.3-0.20240902042256-7fb2702ef0ca // indirect
 	github.com/anacrolix/go-libutp v1.3.1 // indirect
 	github.com/anacrolix/missinggo v1.3.0 // indirect
 	github.com/anacrolix/missinggo/perf v1.0.0 // indirect
@@ -147,6 +149,7 @@ require (
 	github.com/bradenaw/juniper v0.15.2 // indirect
 	github.com/bradfitz/iter v0.0.0-20191230175014-e8f45d346db8 // indirect
 	github.com/calebcase/tmpfile v1.0.3 // indirect
+	github.com/cespare/xxhash v1.1.0 // indirect
 	github.com/cespare/xxhash/v2 v2.3.0 // indirect
 	github.com/chilts/sid v0.0.0-20190607042430-660e94789ec9 // indirect
 	github.com/cloudflare/circl v1.3.7 // indirect
@@ -155,9 +158,8 @@ require (
 	github.com/creasty/defaults v1.7.0 // indirect
 	github.com/cronokirby/saferith v0.33.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
-	github.com/dustin/go-humanize v1.0.1 // indirect
-	github.com/edsrzf/mmap-go v1.1.0 // indirect
 	github.com/ebitengine/purego v0.8.2 // indirect
+	github.com/edsrzf/mmap-go v1.1.0 // indirect
 	github.com/emersion/go-message v0.18.0 // indirect
 	github.com/emersion/go-textwrapper v0.0.0-20200911093747-65d896831594 // indirect
 	github.com/emersion/go-vcard v0.0.0-20230815062825-8fda7d206ec9 // indirect
@@ -213,13 +215,12 @@ require (
 	github.com/minio/md5-simd v1.1.2 // indirect
 	github.com/minio/sha256-simd v1.0.0 // indirect
 	github.com/minio/xxml v0.0.3 // indirect
+	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/mr-tron/base58 v1.2.0 // indirect
 	github.com/mschoch/smat v0.2.0 // indirect
 	github.com/multiformats/go-multihash v0.2.3 // indirect
 	github.com/multiformats/go-varint v0.0.6 // indirect
-	github.com/mitchellh/mapstructure v1.5.0 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
-	github.com/nxadm/tail v1.4.8 // indirect
 	github.com/oklog/ulid v1.3.1 // indirect
 	github.com/panjf2000/ants/v2 v2.9.1 // indirect
 	github.com/pengsrc/go-shared v0.2.1-0.20190131101655-1999055a4a14 // indirect
@@ -272,7 +273,7 @@ require (
 	go.opentelemetry.io/otel v1.34.0 // indirect
 	go.opentelemetry.io/otel/metric v1.34.0 // indirect
 	go.opentelemetry.io/otel/trace v1.34.0 // indirect
-	golang.org/x/exp v0.0.0-20240719175910-8a7402abbf56 // indirect
+	golang.org/x/exp v0.0.0-20240823005443-9b4947da3948 // indirect
 	golang.org/x/mod v0.23.0 // indirect
 	golang.org/x/tools v0.30.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20250219182151-9fdb1cabc7b2 // indirect
@@ -302,3 +303,5 @@ require (
 	golang.org/x/mobile v0.0.0-20250218173827-cd096645fcd3
 	golang.org/x/term v0.29.0
 )
+
+module github.com/z8512/rclone-prime
