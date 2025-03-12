@@ -205,7 +205,7 @@ upload:
 upload_github:
 	./bin/upload-github $(TAG)
 
-cross:	doc
+cross:
 	go run bin/cross-compile.go -release current $(BUILD_FLAGS) $(BUILDTAGS) $(BUILD_ARGS) $(TAG)
 
 beta:
