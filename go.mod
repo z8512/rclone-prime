@@ -1,5 +1,3 @@
-replace github.com/rclone/rclone => /workspaces/rclone-prime
-
 module github.com/z8512/rclone-prime
 
 go 1.23.4
