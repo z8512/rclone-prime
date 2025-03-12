@@ -301,3 +301,7 @@ require (
 	storj.io/picobuf v0.0.3 // indirect
 	zombiezen.com/go/sqlite v0.13.1 // indirect
 )
+
+retract (
+    v1.69.2 // Incorrect version
+)
