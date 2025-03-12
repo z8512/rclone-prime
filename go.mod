@@ -2,6 +2,8 @@ replace github.com/rclone/rclone => github.com/z8512/rclone-prime v1.69.1-1
 
 go 1.23.0
 
+toolchain go1.23.3
+
 require (
 	bazil.org/fuse v0.0.0-20230120002735-62a210ff1fd5
 	github.com/Azure/azure-sdk-for-go/sdk/azcore v1.17.0
