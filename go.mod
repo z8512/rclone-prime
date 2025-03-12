@@ -303,5 +303,5 @@ require (
 )
 
 retract (
-    v1.69.2 // Incorrect version
+    v1.69.2
 )
