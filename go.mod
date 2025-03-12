@@ -1,4 +1,4 @@
-replace github.com/rclone/rclone => github.com/z8512/rclone-prime v1.69.1-1
+module github.com/z8512/rclone-prime
 
 go 1.23.0
 
